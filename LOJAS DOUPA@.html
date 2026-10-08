@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/User/Desktop/PASTA%20ORGANIZADA/DOUPA.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lojas Doupa | Sua loja online</title>
+
+<meta name="description" content="Lojas Doupa - Confira nossos produtos, novidades e ofertas.">
+
+<style>
+
+/* =========================================================
+   LOJAS DOUPA — DESIGN PREMIUM
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap');
+
+:root{
+    --azul:#071a33;
+    --azul2:#0b2d55;
+    --azul3:#123f70;
+    --dourado:#d6ad55;
+    --dourado-claro:#f0d58a;
+    --branco:#ffffff;
+    --cinza:#f5f7fa;
+    --texto:#172033;
+    --borda:rgba(255,255,255,.12);
+    --sombra:0 18px 50px rgba(0,0,0,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:var(--texto);
+    background:#fff;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(7,26,51,.92);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--borda);
+}
+
+.navbar{
+    max-width:1250px;
+    margin:auto;
+    height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 25px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo{
+    width:52px;
+    height:52px;
+    border-radius:13px;
+    object-fit:cover;
+    background:#fff;
+}
+
+.logo-text{
+    color:white;
+    font-family:'Montserrat',sans-serif;
+    font-size:20px;
+    font-weight:800;
+}
+
+.logo-text span{
+    color:var(--dourado);
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--dourado-claro);
+}
+
+.nav-whatsapp{
+    padding:11px 18px;
+    border-radius:30px;
+    background:var(--dourado);
+    color:#071a33!important;
+    font-weight:800!important;
+}
+
+.menu-btn{
+    display:none;
+    color:white;
+    font-size:27px;
+    cursor:pointer;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+    min-height:760px;
+    padding:145px 25px 90px;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(214,173,85,.17), transparent 28%),
+        radial-gradient(circle at 10% 80%, rgba(18,63,112,.45), transparent 30%),
+        linear-gradient(135deg,#06172d,#0a2850 55%,#06172d);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    border:1px solid rgba(214,173,85,.12);
+    border-radius:50%;
+    right:-160px;
+    top:120px;
+}
+
+.hero-container{
+    max-width:1250px;
+    min-height:560px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    align-items:center;
+    gap:70px;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:9px 15px;
+    border:1px solid rgba(214,173,85,.35);
+    border-radius:30px;
+    color:var(--dourado-claro);
+    background:rgba(214,173,85,.08);
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:22px;
+}
+
+.badge::before{
+    content:"";
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--dourado);
+    box-shadow:0 0 12px var(--dourado);
+}
+
+.hero h1{
+    font-family:'Montserrat',sans-serif;
+    font-size:clamp(42px,6vw,76px);
+    line-height:1.02;
+    letter-spacing:-3px;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:var(--dourado);
+}
+
+.hero p{
+    max-width:600px;
+    color:#cbd5e1;
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    gap:9px;
+    padding:15px 23px;
+    border-radius:12px;
+    font-weight:800;
+    transition:.3s;
+}
+
+.btn-gold{
+    background:var(--dourado);
+    color:#071a33;
+}
+
+.btn-gold:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(214,173,85,.25);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,.22);
+    color:#fff;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:var(--azul);
+}
+
+/* HERO CARD */
+
+.hero-card{
+    position:relative;
+    height:450px;
+    border-radius:30px;
+    padding:12px;
+    background:linear-gradient(145deg,rgba(214,173,85,.45),rgba(255,255,255,.04));
+    box-shadow:0 30px 70px rgba(0,0,0,.3);
+}
+
+.hero-card-inner{
+    width:100%;
+    height:100%;
+    border-radius:22px;
+    overflow:hidden;
+    background:#102d50;
+    position:relative;
+}
+
+.hero-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-placeholder{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#aebdce;
+    padding:30px;
+    background:
+        linear-gradient(rgba(7,26,51,.5),rgba(7,26,51,.8)),
+        url("imagens/destaque.jpg") center/cover;
+}
+
+.hero-floating{
+    position:absolute;
+    left:-35px;
+    bottom:30px;
+    background:white;
+    color:var(--texto);
+    padding:17px 20px;
+    border-radius:16px;
+    box-shadow:var(--sombra);
+    min-width:190px;
+}
+
+.hero-floating strong{
+    display:block;
+    font-size:22px;
+}
+
+.hero-floating span{
+    color:#667085;
+    font-size:12px;
+}
+
+/* =========================================================
+   SEÇÃO DE BENEFÍCIOS
+   ========================================================= */
+
+.benefits{
+    margin-top:-1px;
+    background:#fff;
+    padding:55px 25px;
+}
+
+.benefit-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.benefit{
+    display:flex;
+    gap:15px;
+    align-items:center;
+    padding:22px;
+    border:1px solid #e7eaf0;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.benefit:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--sombra);
+}
+
+.benefit-icon{
+    width:48px;
+    height:48px;
+    border-radius:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff7df;
+    color:#a67b1d;
+    font-size:22px;
+    flex-shrink:0;
+}
+
+.benefit strong{
+    display:block;
+    margin-bottom:4px;
+}
+
+.benefit span{
+    font-size:13px;
+    color:#667085;
+}
+
+/* =========================================================
+   ESTRUTURA GERAL
+   ========================================================= */
+
+.section{
+    padding:100px 25px;
+}
+
+.section.gray{
+    background:var(--cinza);
+}
+
+.container{
+    max-width:1250px;
+    margin:auto;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 55px;
+}
+
+.section-heading small{
+    color:#aa8228;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.section-heading h2{
+    font-family:'Montserrat',sans-serif;
+    font-size:clamp(30px,4vw,46px);
+    margin:10px 0 15px;
+    color:#101828;
+}
+
+.section-heading p{
+    color:#667085;
+    line-height:1.7;
+}
+
+/* =========================================================
+   CATEGORIAS
+   ========================================================= */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.category{
+    height:210px;
+    border-radius:22px;
+    overflow:hidden;
+    position:relative;
+    background:#0b2d55;
+}
+
+.category img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.category:hover img{
+    transform:scale(1.08);
+}
+
+.category::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(transparent 25%,rgba(0,0,0,.82));
+}
+
+.category-info{
+    position:absolute;
+    z-index:2;
+    bottom:22px;
+    left:22px;
+    color:#fff;
+}
+
+.category-info h3{
+    font-size:20px;
+    margin-bottom:4px;
+}
+
+.category-info span{
+    font-size:12px;
+    color:#ddd;
+}
+
+/* =========================================================
+   PRODUTOS
+   ========================================================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.product{
+    background:#fff;
+    border:1px solid #e8ebef;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
+}
+
+.product:hover{
+    transform:translateY(-7px);
+    box-shadow:var(--sombra);
+}
+
+.product-image{
+        width:100%;
+        aspect-ratio:4 / 3;
+        position:relative;
+    background:#eef1f5;
+    overflow:hidden;
+}
+
+.product-image img,
+.product-image video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.product-tag{
+    position:absolute;
+    top:14px;
+    left:14px;
+    z-index:2;
+    padding:7px 11px;
+    border-radius:20px;
+    background:var(--dourado);
+    color:#071a33;
+    font-size:11px;
+    font-weight:800;
+}
+
+.product-info{
+    padding:19px;
+}
+
+.product-info small{
+    color:#8a94a6;
+    font-size:11px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+.product-info h3{
+    font-size:17px;
+    margin:7px 0 15px;
+}
+
+.product-button{
+    width:100%;
+    padding:11px;
+    border-radius:10px;
+    border:1px solid #dfe3e8;
+    background:white;
+    color:#102d50;
+    font-weight:800;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.product-button:hover{
+    background:var(--azul);
+    color:white;
+}
+
+/* =========================================================
+   VÍDEOS
+   ========================================================= */
+
+.video-section{
+    background:var(--azul);
+    color:white;
+}
+
+.video-section .section-heading h2{
+    color:white;
+}
+
+.video-section .section-heading p{
+    color:#b9c6d6;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.video-card{
+    border-radius:22px;
+    overflow:hidden;
+    background:#0d315b;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.video-box{
+    aspect-ratio:1/1;
+    background:#092441;
+}
+
+.video-box video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.video-info{
+    padding:17px;
+}
+
+.video-info h3{
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.video-info p{
+    color:#9eafc2;
+    font-size:13px;
+}
+
+/* =========================================================
+   SOBRE
+   ========================================================= */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-image{
+    height:470px;
+    border-radius:28px;
+    overflow:hidden;
+    background:#0b2d55;
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about-content small{
+    color:#a67b1d;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.about-content h2{
+    font-family:'Montserrat',sans-serif;
+    font-size:42px;
+    margin:12px 0 20px;
+}
+
+.about-content p{
+    color:#667085;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.about-list{
+    list-style:none;
+    display:grid;
+    gap:12px;
+    margin-top:25px;
+}
+
+.about-list li{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    font-weight:600;
+}
+
+.about-list li::before{
+    content:"✓";
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff4d4;
+    color:#a67b1d;
+    font-size:12px;
+}
+
+/* =========================================================
+   INSTAGRAM / CTA
+   ========================================================= */
+
+.cta{
+    padding:90px 25px;
+    background:
+        radial-gradient(circle at 80% 20%,rgba(214,173,85,.16),transparent 25%),
+        var(--azul);
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    font-family:'Montserrat',sans-serif;
+    font-size:clamp(32px,5vw,52px);
+    margin-bottom:15px;
+}
+
+.cta p{
+    color:#b9c6d6;
+    max-width:600px;
+    margin:0 auto 28px;
+    line-height:1.7;
+}
+
+/* =========================================================
+   CONTATO
+   ========================================================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-card{
+    padding:30px;
+    border:1px solid #e5e8ed;
+    border-radius:22px;
+    background:white;
+}
+
+.contact-card h3{
+    margin-bottom:10px;
+}
+
+.contact-card p{
+    color:#667085;
+    line-height:1.7;
+}
+
+.contact-link{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:20px;
+    padding:15px;
+    border-radius:12px;
+    background:#f6f8fa;
+    font-weight:700;
+    transition:.3s;
+}
+
+.contact-link:hover{
+    background:#fff4d4;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+    background:#041326;
+    color:#fff;
+    padding:60px 25px 25px;
+}
+
+.footer-grid{
+    max-width:1250px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-logo{
+    font-family:'Montserrat',sans-serif;
+    font-size:24px;
+    font-weight:800;
+}
+
+.footer-logo span{
+    color:var(--dourado);
+}
+
+.footer-grid p{
+    color:#91a1b5;
+    line-height:1.7;
+    margin-top:15px;
+    max-width:450px;
+}
+
+.footer-column h4{
+    margin-bottom:18px;
+}
+
+.footer-column a{
+    display:block;
+    color:#91a1b5;
+    margin-bottom:11px;
+    font-size:14px;
+}
+
+.footer-column a:hover{
+    color:var(--dourado);
+}
+
+.footer-bottom{
+    max-width:1250px;
+    margin:45px auto 0;
+    padding-top:22px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#718096;
+    font-size:12px;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* =========================================================
+   WHATSAPP FLUTUANTE
+   ========================================================= */
+
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    min-width:58px;
+    min-height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:27px;
+    z-index:999;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.08);
+}
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media(max-width:1000px){
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-card{
+        max-width:550px;
+        width:100%;
+        margin:auto;
+    }
+
+    .categories{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .about-image{
+        height:400px;
+    }
+}
+
+@media(max-width:700px){
+
+    .navbar{
+        height:70px;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        padding:20px;
+        background:#071a33;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        padding:12px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero h1{
+        letter-spacing:-2px;
+    }
+
+    .hero-card{
+        height:380px;
+    }
+
+    .hero-floating{
+        left:15px;
+        bottom:15px;
+    }
+
+    .benefit-grid{
+        grid-template-columns:1fr;
+    }
+
+    .categories{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .product-image{
+        aspect-ratio:4 / 3;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+
+@media(max-width:480px){
+
+    body{
+        font-size:15px;
+    }
+
+    .hero-card,
+    .about-image{
+        height:auto;
+        aspect-ratio:4 / 3;
+    }
+
+    .logo-text{
+        font-size:16px;
+    }
+
+    .logo{
+        width:44px;
+        height:44px;
+    }
+
+    .hero{
+        min-height:auto;
+        padding-bottom:70px;
+    }
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+
+    .categories{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .category{
+        height:170px;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .product-image{
+        aspect-ratio:4 / 3;
+    }
+
+    .product-info{
+        padding:13px;
+    }
+
+    .product-info h3{
+        font-size:14px;
+    }
+
+    .video-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        padding:70px 18px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header style="background: rgba(4, 19, 38, 0.97);">
+
+<nav class="navbar">
+
+    <a href="#inicio" class="logo-area">
+
+        <!-- TROQUE PELO CAMINHO DA SUA LOGO -->
+        <img src="imagens site/logo.png" class="logo" loading="lazy" decoding="async" width="800" height="800" alt="Lojas Doupa">
+
+        <div class="logo-text">
+            Lojas <span>Doupa</span>
+        </div>
+
+    </a>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+
+        <a href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+
+        <a class="nav-whatsapp" href="https://wa.me/5519992811785" target="_blank">
+           WhatsApp
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="inicio">
+
+<div class="hero-container">
+
+    <div>
+
+        <div class="badge">
+            Qualidade • Estilo • Confiança
+        </div>
+
+        <h1>
+            Encontre o que você procura na
+            <span>Lojas Doupa.</span>
+        </h1>
+
+        <p>
+            Produtos selecionados para quem procura qualidade,
+            praticidade e uma experiência de compra diferenciada.
+            Conheça nosso catálogo e fale diretamente conosco.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#produtos" class="btn btn-gold">
+                Ver produtos →
+            </a>
+
+            <a href="https://wa.me/5519992811785" target="_blank" class="btn btn-outline">
+                Falar no WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="hero-card-inner">
+
+            <!-- FOTO PRINCIPAL -->
+            <img src="imagens site/logo.png" loading="lazy" decoding="async" width="800" height="800" alt="Lojas Doupa" onerror="this.style.display='none';">
+
+            <div class="hero-placeholder">
+                <div>
+                    <strong>LOJAS DOUPA</strong><br>
+                    Adicione aqui sua imagem principal
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero-floating">
+
+            <strong>+ Qualidade</strong>
+            <span>Produtos selecionados para você</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     BENEFÍCIOS
+===================================================== -->
+
+<section class="benefits">
+
+<div class="benefit-grid">
+
+    <div class="benefit">
+
+        <div class="benefit-icon">✓</div>
+
+        <div>
+            <strong>Produtos selecionados</strong>
+            <span>Qualidade em cada escolha.</span>
+        </div>
+
+    </div>
+
+    <div class="benefit">
+
+        <div class="benefit-icon">◆</div>
+
+        <div>
+            <strong>Atendimento direto</strong>
+            <span>Fale conosco pelo WhatsApp.</span>
+        </div>
+
+    </div>
+
+    <div class="benefit">
+
+        <div class="benefit-icon">★</div>
+
+        <div>
+            <strong>Experiência Doupa</strong>
+            <span>Praticidade para encontrar o que deseja.</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CATEGORIAS
+===================================================== -->
+
+<section class="section gray" id="categorias">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <small>Explore</small>
+
+        <h2>Encontre por categoria</h2>
+
+        <p>
+            Navegue pelas principais categorias da Lojas Doupa.
+        </p>
+
+    </div>
+
+
+    <div class="categories">
+
+        <a href="#produtos" class="category">
+
+            <img src="file:///C:/Users/User/Desktop/PASTA%20ORGANIZADA/imagens/categoria01.jpg" loading="lazy" decoding="async" width="800" height="800" alt="Categoria 1">
+
+            <div class="category-info">
+                <h3>Produtos</h3>
+                <span>Confira nossa seleção</span>
+            </div>
+
+        </a>
+
+
+        <a href="#produtos" class="category">
+
+            <img src="file:///C:/Users/User/Desktop/PASTA%20ORGANIZADA/imagens/categoria02.jpg" loading="lazy" decoding="async" width="800" height="800" alt="Categoria 2">
+
+            <div class="category-info">
+                <h3>Destaques</h3>
+                <span>Produtos em evidência</span>
+            </div>
+
+        </a>
+
+
+        <a href="#produtos" class="category">
+
+            <img src="file:///C:/Users/User/Desktop/PASTA%20ORGANIZADA/imagens/categoria03.jpg" loading="lazy" decoding="async" width="800" height="800" alt="Categoria 3">
+
+            <div class="category-info">
+                <h3>Novidades</h3>
+                <span>Veja o que chegou</span>
+            </div>
+
+        </a>
+
+
+        <a href="#contato" class="category">
+
+            <img src="file:///C:/Users/User/Desktop/PASTA%20ORGANIZADA/imagens/categoria04.jpg" loading="lazy" decoding="async" width="800" height="800" alt="Categoria 4">
+
+            <div class="category-info">
+                <h3>Atendimento</h3>
+                <span>Fale com a Doupa</span>
+            </div>
+
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PRODUTOS
+===================================================== -->
+
+<section class="section" id="produtos">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <small>Catálogo</small>
+
+        <h2>Produtos em destaque</h2>
+
+        <p>
+            Confira alguns dos produtos disponíveis na Lojas Doupa.
+        </p>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- PRODUTO 01 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <span class="product-tag">Destaque</span>
+
+                <img src="imagens site/PRODUTO 01.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 01">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Travesseiros de Plumas de Ganso R$50,00</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2001." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUTO 02 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 02.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 02">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Toalha de Banho decorada R$42,00 </h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2002." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUTO 03 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <span class="product-tag">Novo</span>
+
+                <img src="imagens site/PRODUTO 03.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 03">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Jogo de Copos 6 peças R$ 50,00</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2003." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR 
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUTO 04 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 04.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 04">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Chaleira elétrica R$ 99,90</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2004." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUTO 05 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 05.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 05">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Tapete Indiano R$ 290,00</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2005." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUTO 06 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 06.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 06">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Manta para sofá R$ 79,90</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2006." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUTO 07 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 07.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 07">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Kit 6 taças de 340ml R$ 63,90</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2007." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUTO 08 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 08.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 08">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Jogo de talheres 25 peças R$ 69,90</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+         <!-- PRODUTO 09 -->
+
+         <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 09.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 09">
+
+              </div>   
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Tapete bem-vindo R$ 23,90</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    
+     <!-- PRODUTO 10 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 10.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 10">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Cortina de renda R$ 79,90</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+     <!-- PRODUTO 11 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 11.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 11">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Extensão de tomadas+4 entradas R$85,00</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+     <!-- PRODUTO 12 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 12.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 12">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Coberdrom Queen Luxo R$ 320,00 </h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+     <!-- PRODUTO 13 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 13.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 13">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Panela de pressão 4,5L R$ 270,00</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+     <!-- PRODUTO 14 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 14.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 14">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Panela de pressão 3L R$ 240,00</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+     <!-- PRODUTO 15 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 15.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 15">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Jogo de cozinha 3 peças R$ 89,90</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+     <!-- PRODUTO 16 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 16.png"alt="Produto 16">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Tapete médio 3D R$ 290,00</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+     <!-- PRODUTO 17 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 17.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 17">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Garrafa de café com medidor de temperatura R$ 99,90</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+     <!-- PRODUTO 18 -->
+
+        <div class="product">
+
+            <div class="product-image">
+
+                <img src="imagens site/PRODUTO 18.png" loading="lazy" decoding="async" width="800" height="800" alt="Produto 18">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>Lojas Doupa</small>
+
+                <h3>Manta sherpa R$ 180,00</h3>
+
+                <a href="https://wa.me/5519992811785?text=Ol%C3%A1!%20Tenho%20interesse%20no%20produto%2008." target="_blank">
+
+                    <button class="product-button">
+                        QUERO COMPRAR
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+     
+</section>
+
+
+<!-- =====================================================
+     VÍDEOS
+===================================================== -->
+
+<section class="section video-section" id="videos">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <small>Veja de perto</small>
+
+        <h2>Conheça nossos produtos</h2>
+
+        <p>
+            Adicione vídeos dos produtos para mostrar detalhes,
+            funcionamento e novidades.
+        </p>
+
+    </div>
+
+
+    <div class="video-grid">
+
+
+        <div class="video-card">
+
+            <div class="video-box">
+
+                <video controls="" playsinline="" preload="metadata">
+                    <source src="VIDEOS/VIDEO 01.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+
+            </div>
+
+            <div class="video-info">
+                <h3>Tapete varias cores R$ 59,90</h3>
+                <p>Confira todos os detalhes.</p>
+            </div>
+
+        </div>
+
+
+        <div class="video-card">
+
+            <div class="video-box">
+
+                <video controls="" playsinline="" preload="metadata">
+                    <source src="VIDEOS/VIDEO 02.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+
+            </div>
+
+            <div class="video-info">
+                <h3>Jogo de cozinha completo! R$ 169,90</h3>
+                <p>Veja mais detalhes em vídeo.</p>
+            </div>
+
+        </div>
+
+
+        <div class="video-card">
+
+            <div class="video-box">
+
+                <video controls="" playsinline="" preload="metadata">
+                    <source src="VIDEOS/VIDEO 03.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+
+            </div>
+
+            <div class="video-info">
+                <h3>Almofadas de natal R$ 160,00</h3>
+                <p>Confira nossas novidades.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SOBRE A LOJA
+===================================================== -->
+
+<section class="section" id="sobre">
+
+<div class="container">
+
+    <div class="about">
+
+        <div class="about-image">
+
+            <img src="LOJAS%20DOUPA@_files/logo.png" loading="lazy" decoding="async" width="800" height="800" alt="Lojas Doupa">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <small>Sobre a Doupa</small>
+
+            <h2>Mais que uma loja. Uma experiência.</h2>
+
+            <p>
+                A Lojas Doupa busca oferecer uma experiência simples,
+                prática e diferenciada para seus clientes.
+            </p>
+
+            <p>
+                Aqui você encontra produtos selecionados e pode
+                entrar em contato diretamente com nossa equipe para
+                tirar dúvidas e saber mais sobre cada produto.
+            </p>
+
+
+            <ul class="about-list">
+
+                <li>Atendimento personalizado</li>
+                <li>Produtos selecionados</li>
+                <li>Contato rápido pelo WhatsApp</li>
+                <li>Presença nas redes sociais</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA INSTAGRAM
+===================================================== -->
+
+<section class="cta">
+
+    <h2>Continue acompanhando a Doupa.</h2>
+
+    <p>
+        Siga nosso Instagram para acompanhar produtos,
+        novidades e conteúdos da Lojas Doupa.
+    </p>
+
+    <a href="https://instagram.com/lojas.doupa" target="_blank" class="btn btn-gold">
+
+        @lojas.doupa →
+
+    </a>
+
+</section>
+
+
+<!-- =====================================================
+     CONTATO
+===================================================== -->
+
+<section class="section gray" id="contato">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <small>Contato</small>
+
+        <h2>Fale com a Lojas Doupa</h2>
+
+        <p>
+            Tem alguma dúvida ou quer saber mais sobre um produto?
+            Entre em contato conosco.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <h3>WhatsApp</h3>
+
+            <p>
+                Entre em contato diretamente com nossa equipe
+                através do WhatsApp.
+            </p>
+
+            <a class="contact-link" href="https://wa.me/5519992811785" target="_blank">
+
+                📱
+                <span>(19) 99281-1785</span>
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>Instagram</h3>
+
+            <p>
+                Acompanhe a Lojas Doupa e fique por dentro
+                das novidades.
+            </p>
+
+            <a class="contact-link" href="https://instagram.com/lojas.doupa" target="_blank">
+
+                📸
+                <span>@lojas.doupa</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="footer-grid">
+
+    <div>
+
+        <div class="footer-logo">
+            Lojas <span>Doupa</span>
+        </div>
+
+        <p>
+            Qualidade, praticidade e uma experiência
+            diferenciada para nossos clientes.
+        </p>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h4>Navegação</h4>
+
+        <a href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#videos">Vídeos</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h4>Redes</h4>
+
+        <a href="https://instagram.com/lojas.doupa" target="_blank">
+           Instagram
+        </a>
+
+        <a href="https://wa.me/5519992811785" target="_blank">
+           WhatsApp
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+    <span>
+        © 2026 Lojas Doupa. Todos os direitos reservados.
+    </span>
+
+    <span>
+        Feito com tecnologia e criatividade.
+    </span>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a href="https://wa.me/5519992811785" target="_blank" class="whatsapp" aria-label="WhatsApp">
+
+    ☎
+
+</a>
+
+
+<script>
+
+/* =========================================================
+   MENU MOBILE
+========================================================= */
+
+function toggleMenu(){
+
+    const menu = document.getElementById("navLinks");
+
+    menu.classList.toggle("active");
+
+}
+
+
+/* Fecha o menu ao clicar em algum link */
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        document.getElementById("navLinks")
+        .classList.remove("active");
+
+    });
+
+});
+
+
+/* =========================================================
+   EFEITO NO HEADER AO ROLAR
+========================================================= */
+
+window.addEventListener("scroll", () => {
+
+    const header = document.querySelector("header");
+
+    if(window.scrollY > 50){
+
+        header.style.background = "rgba(4,19,38,.97)";
+
+    }else{
+
+        header.style.background = "rgba(7,26,51,.92)";
+
+    }
+
+});
+
+</script>
+
+
+
+```</body></html>
